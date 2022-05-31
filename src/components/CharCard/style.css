@@ -1,0 +1,19 @@
+.dead {
+  background-color: rgb(241, 197, 197);
+}
+
+.dead h4,
+span {
+  color: brown;
+}
+
+.aliveOrUnknown {
+  background-color: rgb(166, 224, 166);
+}
+
+.aliveOrUnknown h4 {
+  color: rgb(21, 151, 82);
+}
+.aliveOrUnknown span {
+  color: rgb(21, 151, 82);
+}

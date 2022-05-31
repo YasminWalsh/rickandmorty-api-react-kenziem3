@@ -1,0 +1,125 @@
+/* .Main {
+  padding: 4rem 0 5rem;
+} */
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(238, 238, 238);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+small,
+button {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  max-width: 80%;
+}
+
+.Container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0.8rem;
+}
+
+h2 {
+  color: black;
+}
+
+.btnPage {
+  margin-top: 1rem;
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.btnPage button {
+  background-color: goldenrod;
+  border: 1px rgb(83, 71, 0) solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.btnPage button:hover {
+  background-color: rgb(252, 240, 212);
+  color: rgb(83, 71, 0);
+  border: 1px goldenrod solid;
+}
+
+.charCard {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.charCard li {
+  width: calc((100% - 6rem) / 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(0, 0, 0);
+
+  border: 0.1rem rgb(157, 157, 157) solid;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.3em rgb(69, 69, 69);
+}
+
+.charCard li h4 {
+  white-space: nowrap;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+}
+
+.charCard li span {
+  white-space: nowrap;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+}
+
+@media (max-width: 1030px) {
+  .charCard li {
+    width: calc((100% - 4rem) / 3);
+  }
+}
+
+@media (max-width: 720px) {
+  .charCard li {
+    width: calc((100% - 2rem) / 2);
+  }
+}
+
+@media (max-width: 400px) {
+  .charCard li {
+    width: 100%;
+  }
+}
